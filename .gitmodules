@@ -1,3 +1,4 @@
 [submodule "musl"]
 	path = musl
 	url = https://github.com/jevinskie/musl-libc-aarch64-baremetal
+	branch = jev/main
