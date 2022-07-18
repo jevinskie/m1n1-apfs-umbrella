@@ -7,7 +7,7 @@ import shutil
 import subprocess
 import sys
 from contextlib import contextmanager
-from typing import Any, Callable, Union
+from typing import Callable
 
 
 class Path(type(pathlib.Path())):
@@ -47,7 +47,7 @@ def run_cmd(*args, log: bool = True):
     return r
 
 
-def gen_cmd(bin_name: str) -> Callable[..., subprocess.CompletedProcess]:
+def gen_cmd(bin_name: str) -> Callable[[str], subprocess.CompletedProcess]:
     bin_path = shutil.which(bin_name)
     assert bin_path is not None
     return lambda *args, **kwargs: run_cmd(bin_path, *args, **kwargs)
