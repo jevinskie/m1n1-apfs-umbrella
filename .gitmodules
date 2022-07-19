@@ -1,7 +1,9 @@
+[submodule "jevmachopp"]
+	path = jevmachopp
+	url = https://github.com/jevinskie/jevmachopp
+	branch = git-submodule-prep
+
 [submodule "musl"]
 	path = musl
 	url = https://github.com/jevinskie/musl-libc-aarch64-baremetal
 	branch = jev/main
-[submodule "jevmachopp"]
-	path = jevmachopp
-	url = https://github.com/jevinskie/jevmachopp
