@@ -1,0 +1,3 @@
+[musl]
+    upstream_url = https://github.com/bminor/musl
+    upstream_branch = master
