@@ -1,7 +1,7 @@
 [submodule "jevmachopp"]
 	path = jevmachopp
 	url = https://github.com/jevinskie/jevmachopp
-	branch = git-submodule-prep
+	branch = main
 
 [submodule "musl"]
 	path = musl
